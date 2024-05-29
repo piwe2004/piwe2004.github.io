@@ -303,9 +303,9 @@ textarea:focus{border:1px solid #0942a1;}
 [class^="board_viewer"] [class^="viewer_list"] dl.full{width:100%;}
 [class^="board_viewer"] [class^="viewer_list"] dl dt{flex-shrink: 0; width:180px; padding:15px 30px; box-sizing: border-box; border-right:1px solid #dcdcdc; background-color: #f8f8f8; font-size:15px; font-family:'GmarketSansM'; color:#000; word-break: keep-all;}
 [class^="board_viewer"] [class^="viewer_list"] dl dd{background-color: #fff; width: 100%; padding:15px 20px; box-sizing: border-box; font-size:15px; font-family: 'GmarketSansM'; color:#555;}
-[class^="board_viewer"] [class^="viewer_list"] dl dd [class^="filebox"]s li:not(:last-child){margin-bottom:15px;}
-[class^="board_viewer"] [class^="viewer_list"] dl dd [class^="filebox"]s li .fileDown{padding-left:25px; background: url('./images/board/fileIcon.png') left center no-repeat; font-size:15px; color:#555;}
-[class^="board_viewer"] [class^="viewer_list"] dl dd [class^="filebox"]s li .fileViewer{margin-left:10px;}
+[class^="board_viewer"] [class^="viewer_list"] dl dd .fileBoxs li:not(:last-child){margin-bottom:15px;}
+[class^="board_viewer"] [class^="viewer_list"] dl dd .fileBoxs li .fileDown{padding-left:25px; background: url('./images/board/fileIcon.png') left center no-repeat; font-size:15px; color:#555;}
+[class^="board_viewer"] [class^="viewer_list"] dl dd .fileBoxs li .fileViewer{margin-left:10px;}
 [class^="board_viewer"] .bdvCntWrap{padding:50px; box-sizing: border-box;}
 [class^="board_viewer"] .bdvCntWrap img{max-width:100%;}
 
@@ -360,12 +360,12 @@ textarea:focus{border:1px solid #0942a1;}
 [class^="board_write"] .scBtn .resetData{color:#fff; background-color:#000;}
 [class^="board_write"] .daySpan{display: inline-block; width:7.5%; text-align: center;}
 
-[class^="filebox"] {display: flex; align-items: center;}
-[class^="filebox"]:not(:last-child){margin-bottom:10px}
-[class^="filebox"] .fileDel {width: 61px; height: 22px; margin-left: 5px; border: none; background: url('./images/board/delete-btn.png');}
-[class^="filebox"] .btn_file{display:block; line-height:32px; border:1px solid #b5b5b5; box-sizing: border-box; background:#e0e0e0; color:#000; font-family: 'GmarketSansM'; width:100px; text-align:center; cursor: pointer; border-radius: 5px;}
-[class^="filebox"] input[type="file"] {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
-[class^="filebox"].active .btn_file{background:#0942a1;}
+[class^="file_wrap"] {display: flex; align-items: center;}
+[class^="file_wrap"]:not(:last-child){margin-bottom:10px}
+[class^="file_wrap"] .fileDel {width: 61px; height: 22px; margin-left: 5px; border: none; background: url('./images/board/delete-btn.png');}
+[class^="file_wrap"] .btn_file{display:block; line-height:32px; border:1px solid #b5b5b5; box-sizing: border-box; background:#e0e0e0; color:#000; font-family: 'GmarketSansM'; width:100px; text-align:center; cursor: pointer; border-radius: 5px;}
+[class^="file_wrap"] input[type="file"] {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0}
+[class^="file_wrap"].active .btn_file{background:#0942a1;}
 
 
 /* S.이미지게시판 */
