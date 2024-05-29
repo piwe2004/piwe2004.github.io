@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>스타일가이드</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./jquery-3.4.1.min.js"></script>
+
+    <style>
+        .content_wrap{padding:50px; box-sizing: border-box;}
+    </style>
+</head>
+
+<body>
+    <div class="content_wrap">
+        <div class="contents">
+            <div class="board_selecter">
+                <form action="">
+                    <div class="boardSearch">
+                        <select name="" id="" title="검색옵션">
+                            <option value="">전체</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <select name="" id="" title="검색옵션">
+                            <option value="">제목</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <select name="" id="" title="검색옵션">
+                            <option value="">전체</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <select name="" id="" title="검색옵션">
+                            <option value="">제목</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <select name="" id="" title="검색옵션">
+                            <option value="">전체</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <div class="boardSearch-input">
+                            <label for="" class="blind">검색어</label>
+                            <input type="text" id="" placeholder="검색어를 입력하세요" title="검색어 입력">
+                            <input type="submit" title="검색하기">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="gap50"></p>
+            <div class="board_selecter">
+                <form action="">
+                    <div class="boardSearch">
+                        <select name="" id="" title="검색옵션">
+                            <option value="">제목</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <select name="" id="" title="검색옵션">
+                            <option value="">전체</option>
+                            <option value="">제목</option>
+                            <option value="">내용</option>
+                            <option value="">작성자</option>
+                        </select>
+                        <div class="boardSearch-input">
+                            <label for="" class="blind">검색어</label>
+                            <input type="text" id="" placeholder="검색어를 입력하세요" title="검색어 입력">
+                            <input type="submit" title="검색하기">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <p class="gap20"></p>
+            <!-- s: board_list list01-->
+            <div class="board_list">
+                <table class="list01">
+                    <caption>번호,제목,첨부,작성자,등록일,조회의 내용이 있는 게시판 입니다.</caption>
+                    <colgroup>
+                        <col style="width:7%">
+                        <col style="width:60%">
+                        <col style="width:9%">
+                        <col style="width:12%">
+                        <col style="width:12%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span>번호</span></th>
+                            <th scope="col"><span>제목</span></th>
+                            <th scope="col"><span>작성자</span></th>
+                            <th scope="col"><span>첨부파일</span></th>
+                            <th scope="col"><span>조회</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a><span>N</span>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a><span>N</span>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a><span>N</span>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="listNum mnone">2</td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="gap20"></p>
+            <!-- s: board_list list01-->
+            <div class="board_list">
+                <table >
+                    <caption>번호,제목,첨부,작성자,등록일,조회의 내용이 있는 게시판 입니다.</caption>
+                    <colgroup>
+                        <col style="width:7%">
+                        <col style="width:60%">
+                        <col style="width:9%">
+                        <col style="width:12%">
+                        <col style="width:12%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span>번호</span></th>
+                            <th scope="col"><span>제목</span></th>
+                            <th scope="col"><span>작성자</span></th>
+                            <th scope="col"><span>첨부파일</span></th>
+                            <th scope="col"><span>조회</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td class="notice"><span>공지</span></td>
+                            <td class="title">
+                                <a href="#n" title="해당게시물로 이동합니다.">게시물 제목</a>
+                                <span>N</span>
+                                <a href="" title="" class="list_file file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></a>
+                            </td>
+                            <td>홍길동</td>
+                            <td class="file"><img src="./images/board/fileIcon.png" alt="첨부파일 있음"></td>
+                            <td>32</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="gap40"></p>
+            <div class="board_list_btn">
+                <div class="bdNumWrap">
+                        <a href="#" title="게시판 첫번째목록 페이지로 이동합니다." class="bdNumList bdNumFirst">
+                            <img src="./images/common/boardFirst.png" alt="왼쪽방향 화살표">
+                        </a>
+                        <a href="#" title="게시판 이전목록 페이지로 이동합니다." class="bdNumList bdNumPrev">
+                            <img src="./images/common//boardLeft.png" alt="왼쪽방향 화살표">
+                        </a>
+                        <a href="#" title="게시판 1번목록 페이지로 이동합니다." class="bdNumList bdNum numOn">1</a>
+                        <a href="#" title="게시판 1번목록 페이지로 이동합니다." class="bdNumList bdNum">2</a>
+                        <a href="#" title="게시판 1번목록 페이지로 이동합니다." class="bdNumList bdNum">3</a>
+                        <a href="#" title="게시판 1번목록 페이지로 이동합니다." class="bdNumList bdNum">4</a>
+                        <a href="#" title="게시판 1번목록 페이지로 이동합니다." class="bdNumList bdNum">5</a>
+                        <a href="#" title="게시판 다음목록 페이지로 이동합니다." class="bdNumList bdNumNext">
+                            <img src="./images/common//boardRight.png" alt="왼쪽방향 화살표">
+                        </a>
+                        <a href="#" title="게시판 마지막목록 페이지로 이동합니다." class="bdNumList bdNumLast">
+                            <img src="./images/common//boardLast.png" alt="왼쪽방향 화살표">
+                        </a>
+                </div>
+                <div class="board_btns">
+                    <a href="#" title="글쓰기 페이지로 이동합니다.">
+                        <img src="./images/common/btnB-write.png" alt="글쓰기">
+                    </a>
+                </div>
+            </div>
+            <p class="gap50"></p>
+            <p class="gap50"></p>
+            <p class="gap50"></p>
+            <!-- e: board_list list01-->
+            <div class="board_viewer">
+                <div class="viewer_title">
+                    <p>게시판 제목</p>
+                </div>
+                <div class="viewer_list">
+                    <dl>
+                        <dt>담당부서</dt>
+                        <dd>부서</dd>
+                    </dl>
+                    <dl>
+                        <dt>조회수</dt>
+                        <dd>18</dd>
+                    </dl>
+                    <dl>
+                        <dt>담당자명</dt>
+                        <dd>홍길동</dd>
+                    </dl>
+                    <dl>
+                        <dt>담당자 전화번호</dt>
+                        <dd>000-000-0000</dd>
+                    </dl>
+                    <dl class="full">
+                        <dt>등록일</dt>
+                        <dd>2022-12-14</dd>
+                    </dl>
+                    <dl class="full fileBox">
+                        <dt>첨부</dt>
+                        <dd>
+                            <ul class="fileBoxs">
+                                <li class="fileBox">
+                                    <a href="#" title="다운받기(새창열림)" class="fileDown">첨부파일.pdf (67 kb)</a>
+                                    <a href="#" title="뷰어로보기(새창열림)" class="fileViewer">
+                                        <img src="./images/board/viwerIcon.png" alt="전용뷰어">
+                                    </a>
+                                </li>
+                                <li class="fileBox">
+                                    <a href="#" title="다운받기(새창열림)" class="fileDown">첨부파일.pdf (67 kb)</a>
+                                    <a href="#" title="뷰어로보기(새창열림)" class="fileViewer">
+                                        <img src="./images/board/viwerIcon.png" alt="전용뷰어">
+                                    </a>
+                                </li>
+                                <li class="fileBox">
+                                    <a href="#" title="다운받기(새창열림)" class="fileDown">첨부파일.pdf (67 kb)</a>
+                                    <a href="#" title="뷰어로보기(새창열림)" class="fileViewer">
+                                        <img src="./images/board/viwerIcon.png" alt="전용뷰어">
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="bdvCntWrap">
+                    <p>내용</p>
+                </div>
+            </div>
+            <p class="gap20"></p>
+            <div class="board_btns tr">
+                <a href="#" title="리스트 페이지로 이동합니다.">
+                    <img src="./images/common/btnB-list.png" alt="목록">
+                </a>
+            </div>
+            <p class="gap50"></p>
+            <div class="board_pagebtn">
+                <dl>
+                    <dt class="page_prev"><span>이전글</span></dt>
+                    <dd>
+                        <a href="#" title="페이지 이동">이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목이전글 제목</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt class="page_next"><span>다음글</span></dt>
+                    <dd>
+                        <a href="#" title="페이지 이동">다음글 제목</a>
+                    </dd>
+                </dl>
+            </div>
+            <p class="gap50"></p>
+            <p class="gap50"></p>
+            <p class="gap50"></p>
+            <div class="board_write">
+                <!-- s: write01 -->
+                <table>
+                    <caption>번호,제목,담당부서,전화번호,처리기간,첨부,위치찾기의 정보를 제공하는 게시판 입니다.</caption>
+                    <colgroup>
+                        <col style="width:15%">
+                        <col style="width:35%">
+                        <col style="width:15%">
+                        <col style="width:35%">
+                    </colgroup>
+                    <tbody>
+                        <!--모바일 상황시 td에 class="mnone"은 "display:none;"이고  class="mblock"은 "display:block;" 입니다.-->
+                        <tr>
+                            <th>이름</td>
+                            <td>홈길동</td>
+                            <th>연락처</td>
+                            <td>000-0000-0000</td>
+                        </tr>
+                        <tr>
+                            <th><label for="title" class="impor_txt">제목</label></td>
+                            <td><input type="text" placeholder="" class="w100p" id="title"></td>
+                            <th><label for="password" class="impor_txt">비밀번호</label></td>
+                            <td><input type="text" placeholder="" class="w100p" id="password"></td>
+                        </tr>
+                        <tr>
+                            <th><label class="impor_txt">작성자</label></td>
+                            <td><input type="text" placeholder="" class="w100p" id="name"></td>
+                            <th>이메일</td>
+                            <td>
+                                <div class="email_input">
+                                    <label for="emailId" class="hide">아이디</label>
+                                    <input type="text" class="id" id="emailId">
+                                    <p class="at">@</p>
+                                    <label for="emailAdress" class="hide">이메일주소</label>
+                                    <input type="text" class="email" id="emailAdress">
+                                    <p class="chk-select">
+                                        <label for="emailSelect" class="hide">이메일주소 선택하기</label>
+                                        <select id="emailSelect">
+                                            <option selected="">gmail.com</option>
+                                            <option>naver.com</option>
+                                        </select>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>연락처</td>
+                            <td>
+                                <div class="tel_input">
+                                    <label for="telSelect" class="hide">전화번호앞자리</label>
+                                    <p class="chk-select">
+                                        <select id="telSelect">
+                                            <option selected="">010</option>
+                                            <option>011</option>
+                                        </select>
+                                    </p>
+                                    <p class="line">-</p>
+                                    <label for="telNumber2" class="hide">전화번호 2번짜자리</label>
+                                    <input type="text" id="telNumber2">
+                                    <p class="line">-</p>
+                                    <label for="telNumber3" class="hide">전화번호 3번짜자리</label>
+                                    <input type="text" id="telNumber3">
+                                </div>
+                            </td>
+                            <th>공개여부</td>
+                            <td>
+                                <div class="radio_group">
+                                    <p class="radios">
+                                        <input id="public01" name="board_public" type="radio" checked="">
+                                        <label for="public01">공개</label> 
+                                    </p>
+                                    <p class="radios">
+                                        <input id="public02" name="board_public" type="radio" checked="">
+                                        <label for="public02">비공개</label> 
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>연락처</td>
+                            <td colspan="3">
+                                <div class="tel_input">
+                                    <label for="telSelect" class="hide">전화번호앞자리</label>
+                                    <p class="chk-select">
+                                        <select id="telSelect">
+                                            <option selected="">010</option>
+                                            <option>011</option>
+                                        </select>
+                                    </p>
+                                    <p class="line">-</p>
+                                    <label for="telNumber2" class="hide">전화번호 2번짜자리</label>
+                                    <input type="text" id="telNumber2">
+                                    <p class="line">-</p>
+                                    <label for="telNumber3" class="hide">전화번호 3번짜자리</label>
+                                    <input type="text" id="telNumber3">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주소</td>
+                            <td colspan="3">
+                                <div class="writeAddress">
+                                    <div class="filebox address">
+                                        <input type="text" class="filename" readonly="readonly" id="departSch" title="우편번호">
+                                        <a class="btn_file">우편번호찾기</a>
+                                    </div>
+                                    <div class="addressMore">
+                                        <input type="text" title="주소1">
+                                        <input type="text" title="상세주소">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>연락처</td>
+                            <td colspan="3">
+                                <div class="tel_input w60p">
+                                    <p class="chk-select">
+                                        <select>
+                                            <option selected="">010</option>
+                                            <option>011</option>
+                                        </select>
+                                    </p>
+                                    <p class="line">-</p>
+                                    <input type="text">
+                                    <p class="line">-</p>
+                                    <input type="text">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>글작성</td>
+                            <td colspan="3">
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>파일첨부</td>
+                            <td colspan="3">
+                                <ul>
+                                    <li class="filebox">
+                                        <a href="#" title="첨부파일 파일삭제">첨부파일명.hwp</a>
+                                        <button type="button" class="fileDel"></button>
+                                    </li>
+                                    <li class="filebox">
+                                        <label for="uploadBtn04" class="btn_file">파일선택</label>
+                                        <input type="file" id="uploadBtn04" class="uploadBtn">
+                                    </li>
+                                    <li class="filebox">
+                                        <label for="uploadBtn05" class="btn_file">파일선택</label>
+                                        <input type="file" id="uploadBtn05" class="uploadBtn">
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- s: write01 -->
+            </div>
+            <p class="gap40"></p>
+            <div class="board_list_btn">
+                <div class="board_btns">
+                    <a href="#" title="글작성을 완료합니다.">
+                        <img src="./images/common/btnG-confirm.png" alt="확인">
+                    </a>
+                    <a href="#" title="글작성을 취소합니다.">
+                        <img src="./images/common/btnB-cancel.png" alt="취소">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

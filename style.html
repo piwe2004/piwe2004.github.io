@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>스타일가이드</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./jquery-3.4.1.min.js"></script>
+
+    <style>
+        .content_wrap{padding:50px; box-sizing: border-box;}
+    </style>
+</head>
+
+<body>
+    <div class="content_wrap">
+        <div class="contents">
+            <h4 class="htag_title">메뉴 타입</h4>
+            <p class="gap30"></p>
+            <div class="tap_box">
+                <ul class="taps depth4">
+                    <li>
+                        <a href="#" class="active" title="선택됨">
+                            <span>메뉴 타입1</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입1</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입1</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입1</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입1</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입1</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>4차메뉴</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>4차메뉴</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="gap50"></p>
+
+                <ul class="taps depth5">
+                    <li>
+                        <a href="#" class="active" title="선택됨">
+                            <span>메뉴 타입2</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입2</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입2</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입2</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="gap50"></p>
+
+                <ul class="taps depth6">
+                    <li>
+                        <a href="#" class="active" title="선택됨">
+                            <span>메뉴 타입3</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입3</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입3</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>메뉴 타입3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="gap50"></p>
+            <h4 class="htag_title">H4 태그</h4>
+            <p class="gap20"></p>
+            <h5 class="htag_title">H5 태그</h5>
+            <p class="gap10"></p>
+            <ul class="cnt_list step01">
+                <li>
+                    list 내용이 들어갑니다.
+                </li>
+            </ul>
+            <ul class="cnt_list step02">
+                <li>list 세부 내용이 들어갑니다. <span class="c-green">포인트 색상 설명이 들어갑니다.</span></li>
+                <li>list 세부 내용이 들어갑니다. <span class="c-green">포인트 색상 설명이 들어갑니다.</span></li>
+                <li>list 세부 내용이 들어갑니다. <span class="c-green">포인트 색상 설명이 들어갑니다.</span></li>
+            </ul>
+            <p class="gap20"></p>
+            <h6 class="htag_title">H6 태그</h6>
+            <p class="gap10"></p>
+            <ul class="cnt_list step01">
+                <li>
+                    list 내용이 들어갑니다.
+                    <ul class="cnt_list step02">
+                        <li>list 세부 내용이 들어갑니다. <span class="c-green">포인트 색상 설명이 들어갑니다.</span></li>
+                        <li>list 세부 내용이 들어갑니다. <span class="c-green">포인트 색상 설명이 들어갑니다.</span></li>
+                        <li>list 세부 내용이 들어갑니다. <span class="c-green">포인트 색상 설명이 들어갑니다.</span></li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="gap20"></p>
+            <ul class="cnt_list number_type">
+                <li>
+                    <span class="txt">순서나열 리스트 내용 첫번째입니다.</span>
+                </li>
+
+                <li>
+                    <span class="txt">순서나열 리스트 내용 첫번째입니다.</span>
+                </li>
+            </ul>
+            <p class="gap50"></p>
+            <h5 class="htag_title">테이블</h5>
+            <p class="gap10"></p>
+            <!-- 테이블.S -->
+            <div class="table_box">
+                <table class="type01">
+                    <caption>7일,14일,20일,30일,2개월,3개월의 정보를 제공하는 반응형 무처리 표 입니다.</caption>
+                    <colgroup>
+                        <col style="width:16.666666%">
+                        <col style="width:16.666666%">
+                        <col style="width:16.666666%">
+                        <col style="width:16.666666%">
+                        <col style="width:16.666666%">
+                        <col style="width:16.666666%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">제목</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                            <td>내용</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="gap50"></p>
+            <div class="txtBoxWrap">
+                <dl class="tbwList">
+                    <dt>타이틀 들어가는 부분</dt>
+                    <dd>
+                        <p>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.<br>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.<br>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="tbwList">
+                    <dt>타이틀 들어가는 부분</dt>
+                    <dd>
+                        <p>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.<br>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.<br>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="tbwList">
+                    <dt>타이틀 들어가는 부분</dt>
+                    <dd>
+                        <p>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.<br>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.<br>
+                            텍스트 들어가는 부분입니다. 텍스트 들어가는 부분입니다.
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+            <p class="gap50"></p>
+            <div class="btn_wrap type01">
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnW-write.png" alt="글쓰기">
+                </a>
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnW-list.png" alt="목록">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnW-modify.png" alt="수정">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnW-delete.png" alt="삭제">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnW-cancel.png" alt="취소">
+                </a>
+
+                <a href="#">
+                    <img src="./images/common/btnW-confirm.png" alt="확인">
+                </a>
+            </div>
+            <p class="gap20"></p>
+            <div class="btn_wrap type01">
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnB-write.png" alt="글쓰기">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnB-list.png" alt="목록">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnB-modify.png" alt="수정">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnB-delete.png" alt="삭제">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnB-cancel.png" alt="취소">
+                </a>
+
+                <a href="#">
+                    <img src="./images/common/btnB-confirm.png" alt="확인">
+                </a>
+            </div>
+            <p class="gap20"></p>
+            <div class="btn_wrap type01">
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnG-write.png" alt="글쓰기">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnG-list.png" alt="목록">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnG-modify.png" alt="수정">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnG-delete.png" alt="삭제">
+                </a>
+
+                <a href="#" class="mg10r">
+                    <img src="./images/common/btnG-cancel.png" alt="취소">
+                </a>
+
+                <a href="#">
+                    <img src="./images/common/btnG-confirm.png" alt="확인">
+                </a>
+            </div>
+            <p class="gap50"></p>
+            <div class="btn_wrap small-type">
+                <a href="#" class="dwn mg10r">다운로드</a>
+                <a href="#" class="detail mg10r">상세보기</a>
+                <a href="#" class="go mg10r">바로가기</a>
+                <a href="#" class="location mg10r">위치보기</a>
+                <a href="#" class="home">홈</a>
+            </div>
+            <p class="gap50"></p>
+            <div class="btn_wrap type02">
+                <a href="#" class="dwn">
+                    <span>다운로드</span>
+                </a>
+
+                <a href="#" class="detail">
+                    <span>상세보기</span>
+                </a>
+
+                <a href="#" class="go">
+                    <span>바로가기</span>
+                </a>
+
+                <a href="#" class="location">
+                    <span>위치보기</span>
+                </a>
+
+                <a href="#" class="home">
+                    <span>홈페이지</span>
+                </a>
+            </div>
+            <p class="gap20"></p>
+            <div class="btn_wrap type02 c-green">
+                <a href="#" class="dwn">
+                    <span>다운로드</span>
+                </a>
+
+                <a href="#" class="detail">
+                    <span>상세보기</span>
+                </a>
+
+                <a href="#" class="go">
+                    <span>바로가기</span>
+                </a>
+
+                <a href="#" class="location">
+                    <span>위치보기</span>
+                </a>
+
+                <a href="#" class="home">
+                    <span>홈페이지</span>
+                </a>
+            </div>
+            <p class="gap50"></p>
+            <div class="btn_wrap type03">
+                <a href="#" class="go-link01">
+                    <span>#1 홈페이지 바로가기</span>
+                </a>
+                <a href="#" class="go-link02">
+                    <span>#2 홈페이지 바로가기</span>
+                </a>
+                <a href="#" class="go-link03">
+                    <span>#3 홈페이지 바로가기</span>
+                </a>
+            </div>
+            <p class="gap50"></p>
+            <p class="text_box">
+                박스 컨텐츠 내용
+            </p>
+            <p class="gap30"></p>
+            <div class="text_box btn_type">
+                <h5 class="tit">박스 타이틀</h5>
+                <span class="txt">박스 타이틀 내용</span>
+
+                <div class="btn_wrap type03">
+                    <a href="#" class="go-link01">
+                        <span>버튼</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
