@@ -54,7 +54,7 @@
                             <option value="">작성자</option>
                         </select>
                         <div class="boardSearch-input">
-                            <label for="" class="blind">검색어</label>
+                            <label for="" class="hide">검색어</label>
                             <input type="text" id="" placeholder="검색어를 입력하세요" title="검색어 입력">
                             <input type="submit" title="검색하기">
                         </div>
@@ -78,7 +78,7 @@
                             <option value="">작성자</option>
                         </select>
                         <div class="boardSearch-input">
-                            <label for="" class="blind">검색어</label>
+                            <label for="" class="hide">검색어</label>
                             <input type="text" id="" placeholder="검색어를 입력하세요" title="검색어 입력">
                             <input type="submit" title="검색하기">
                         </div>
@@ -366,9 +366,11 @@
                         </a>
                 </div>
                 <div class="board_btns">
-                    <a href="#" title="글쓰기 페이지로 이동합니다.">
-                        <img src="./images/common/btnB-write.png" alt="글쓰기">
-                    </a>
+                    <div class="btn_wrap btn_type">
+                        <a href="#" class="btn_write">
+                            <span>글쓰기</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <p class="gap50"></p>
@@ -400,27 +402,18 @@
                         <dt>등록일</dt>
                         <dd>2022-12-14</dd>
                     </dl>
-                    <dl class="file_wrap">
+                    <dl class="file_wrap full">
                         <dt>첨부</dt>
                         <dd>
                             <ul class="fileBoxs">
                                 <li class="fileBox">
                                     <a href="#" title="다운받기(새창열림)" class="fileDown">첨부파일.pdf (67 kb)</a>
-                                    <a href="#" title="뷰어로보기(새창열림)" class="fileViewer">
-                                        <img src="./images/board/viwerIcon.png" alt="전용뷰어">
-                                    </a>
                                 </li>
                                 <li class="fileBox">
                                     <a href="#" title="다운받기(새창열림)" class="fileDown">첨부파일.pdf (67 kb)</a>
-                                    <a href="#" title="뷰어로보기(새창열림)" class="fileViewer">
-                                        <img src="./images/board/viwerIcon.png" alt="전용뷰어">
-                                    </a>
                                 </li>
                                 <li class="fileBox">
                                     <a href="#" title="다운받기(새창열림)" class="fileDown">첨부파일.pdf (67 kb)</a>
-                                    <a href="#" title="뷰어로보기(새창열림)" class="fileViewer">
-                                        <img src="./images/board/viwerIcon.png" alt="전용뷰어">
-                                    </a>
                                 </li>
                             </ul>
                         </dd>
@@ -431,9 +424,9 @@
                 </div>
             </div>
             <p class="gap20"></p>
-            <div class="board_btns tr">
-                <a href="#" title="리스트 페이지로 이동합니다.">
-                    <img src="./images/common/btnB-list.png" alt="목록">
+            <div class="btn_wrap btn_type">
+                <a href="#" class="btn_list">
+                    <span>목록</span>
                 </a>
             </div>
             <p class="gap50"></p>
@@ -555,9 +548,9 @@
                         <tr>
                             <th>주소</td>
                             <td colspan="3">
-                                <div class="writeAddress">
-                                    <div class="filebox address">
-                                        <input type="text" class="filename" readonly="readonly" id="departSch" title="우편번호">
+                                <div class="write_address">
+                                    <div class="file_wrap address">
+                                        <input type="text" class="filename" readonly="readonly" title="우편번호">
                                         <a class="btn_file">우편번호찾기</a>
                                     </div>
                                     <div class="addressMore">
@@ -594,16 +587,15 @@
                             <th>파일첨부</td>
                             <td colspan="3">
                                 <ul>
-                                    <li class="filebox">
+                                    <li class="file_wrap">
                                         <a href="#" title="첨부파일 파일삭제">첨부파일명.hwp</a>
-                                        <button type="button" class="fileDel"></button>
                                     </li>
-                                    <li class="filebox">
-                                        <label for="uploadBtn04" class="btn_file">파일선택</label>
+                                    <li class="file_wrap">
+                                        <label for="uploadBtn04" class="hide">파일선택</label>
                                         <input type="file" id="uploadBtn04" class="uploadBtn">
                                     </li>
-                                    <li class="filebox">
-                                        <label for="uploadBtn05" class="btn_file">파일선택</label>
+                                    <li class="file_wrap">
+                                        <label for="uploadBtn05" class="hide">파일선택</label>
                                         <input type="file" id="uploadBtn05" class="uploadBtn">
                                     </li>
                                 </ul>
@@ -614,13 +606,13 @@
                 <!-- s: write01 -->
             </div>
             <p class="gap40"></p>
-            <div class="board_list_btn">
-                <div class="board_btns">
-                    <a href="#" title="글작성을 완료합니다.">
-                        <img src="./images/common/btnG-confirm.png" alt="확인">
+            <div class="board_btns">
+                <div class="btn_wrap btn_type">
+                    <a href="#" class="btn_acc">
+                        <span>확인</span>
                     </a>
-                    <a href="#" title="글작성을 취소합니다.">
-                        <img src="./images/common/btnB-cancel.png" alt="취소">
+                    <a href="#" class="btn_cen">
+                        <span>취소</span>
                     </a>
                 </div>
             </div>
