@@ -77,6 +77,7 @@
     --color_9: #999;
     --color_white: #fff;
     --color_f9: #f9f9f9;
+    --color_f7: #f7f7f7;
     --color_red: #C20606;
     --color_blue: #0651C2;
     --color_green: #038A19;
@@ -256,7 +257,7 @@ body {
     color: var(--color_5);
     padding: 10px 20px;
     border: dashed 1px #e1e1e1;
-    font-size: var(--font_14);
+    font-size: var(--font_16);
     font-weight: var(--font_w400);
     text-align: center;
 }
@@ -557,6 +558,7 @@ h6[class^="htag_title"]:before {
     background-position: center;
     background-repeat: no-repeat;
     font-size: 0;
+    padding:0;
 }
 
 [class^="btn_wrap"].small_type .dwn,
@@ -1037,6 +1039,7 @@ textarea {
     font-size: var(--font_18);
     border-bottom: 1px solid #999;
     font-weight: var(--font_w500);
+    background-color: var(--color_f7);
 }
 
 [class^="board_list"] table thead th span {
@@ -1070,10 +1073,6 @@ textarea {
     transition: all 0.3s ease-out;
 }
 
-[class^="board_list"] table tbody tr:hover {
-    background: #f7f7f7;
-}
-
 [class^="board_list"] table tbody th {
     letter-spacing: -0.02em;
     padding: 12px 10px;
@@ -1099,17 +1098,9 @@ textarea {
     border-color: #9d9d9d;
 }
 
-
-[class^="board_list"] table tbody tr.notice_line {
-    background-color: #f7f7f7;
-}
-[class^="board_list"] table tbody td.notice span {
-    font-size: 0;
-    display: inline-block;
-    width: 18px;
-    height: 22px;
-    background: url('./images/board/boxTItle5_bg.png') center no-repeat;
-    background-size: 100%;
+[class^="board_list"] table tbody td.notice {
+    background-color: var(--color_green2);
+    color:var(--color_white);
 }
 
 
@@ -1246,7 +1237,8 @@ textarea {
     width: 22px;
     height: 22px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 13px;
+    margin-bottom: 2px;
     vertical-align: top;
 }
 
@@ -1322,8 +1314,7 @@ textarea {
 }
 
 [class^="board_table"] .bdvCntWrap {
-    padding: 50px;
-    box-sizing: border-box;
+    min-height:300px;
 }
 
 [class^="board_table"] .bdvCntWrap img {
@@ -1417,7 +1408,7 @@ textarea {
 }
 
 [class^="board_table"] table thead th {
-    background: #f7f7f7;
+    background: var(--color_f7);
     color:var(--color_0);
     text-align: left;
     letter-spacing: -0.03em;
@@ -1437,7 +1428,7 @@ textarea {
 
 [class^="board_table"] table tbody th {
     color:var(--color_0);
-    background: #f7f7f7;
+    background: var(--color_f7);
     font-size:var(--font_18);
     font-weight:var(--font_w500);
     text-align: center;
@@ -1454,14 +1445,12 @@ textarea {
 
 [class^="board_table"] table tbody th .impor_txt {
     position: relative;
-    display: inline-block;
-    padding-right: 15px;
 }
 
 [class^="board_table"] table tbody th .impor_txt:before {
     position: absolute;
     top: -1px;
-    right: 0px;
+    right: -15px;
     color: #e55757;
     font-size: var(--font_13);
     font-weight: var(--font_w600);
@@ -1486,7 +1475,7 @@ textarea {
 [class^="board_table"] table tbody td .tel_input .line {
     line-height: 38px;
     vertical-align: middle;
-    font-size: var(--font_18);
+    font-size: var(--font_15);
     font-weight: var(--font_w700);
     display: inline-block;
     text-align: center;

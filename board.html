@@ -7,8 +7,8 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./reset.css?t=1">
-    <link rel="stylesheet" href="./style.css?t=1">
+    <link rel="stylesheet" href="./reset.css?t=2">
+    <link rel="stylesheet" href="./style.css?t=2">
 
     <script src="./jquery-3.4.1.min.js"></script>
 
@@ -247,6 +247,14 @@
                 <!-- s: write01 -->
                 <table class="viewer_type">
                     <caption>번호,제목,담당부서,전화번호,처리기간,첨부,위치찾기의 정보를 제공하는 게시판 입니다.</caption>
+                    <colgroup>
+                        <col style="width:220px;">
+                        <col style="width:auto;">
+                        <col style="width:220px;">
+                        <col style="width:auto;">
+                        <col style="width:220px;">
+                        <col style="width:auto;">
+                    </colgroup>
                     <tbody>
                         <tr class="viewr_title">
                             <th colspan="6">게시판 제목</th>
@@ -283,6 +291,13 @@
                                 </ul>
                             </td>
                         </tr>
+                        <tr>
+                            <td colspan="7">
+                                <div class="bdvCntWrap">
+                                    <p>내용</p>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <!-- s: write01 -->
@@ -316,13 +331,12 @@
                 <table>
                     <caption>번호,제목,담당부서,전화번호,처리기간,첨부,위치찾기의 정보를 제공하는 게시판 입니다.</caption>
                     <colgroup>
-                        <col style="width:15%">
-                        <col style="width:35%">
-                        <col style="width:15%">
-                        <col style="width:35%">
+                        <col style="width:220px">
+                        <col style="width:auto">
+                        <col style="width:220px">
+                        <col style="width:auto">
                     </colgroup>
                     <tbody>
-                        <!--모바일 상황시 td에 class="mnone"은 "display:none;"이고  class="mblock"은 "display:block;" 입니다.-->
                         <tr>
                             <th>이름</td>
                             <td>홈길동</td>
@@ -387,23 +401,6 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>연락처</td>
-                            <td colspan="3">
-                                <div class="tel_input">
-                                    <p class="chk-select">
-                                        <select id="telSelect">
-                                            <option selected="">010</option>
-                                            <option>011</option>
-                                        </select>
-                                    </p>
-                                    <p class="line">-</p>
-                                    <input type="text" id="telNumber2">
-                                    <p class="line">-</p>
-                                    <input type="text" id="telNumber3">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
                             <th>주소</td>
                             <td colspan="3">
                                 <div class="write_address">
@@ -415,23 +412,6 @@
                                         <input type="text" title="주소1">
                                         <input type="text" title="상세주소">
                                     </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>연락처</td>
-                            <td colspan="3">
-                                <div class="tel_input w60p">
-                                    <p class="chk-select">
-                                        <select>
-                                            <option selected="">010</option>
-                                            <option>011</option>
-                                        </select>
-                                    </p>
-                                    <p class="line">-</p>
-                                    <input type="text">
-                                    <p class="line">-</p>
-                                    <input type="text">
                                 </div>
                             </td>
                         </tr>
