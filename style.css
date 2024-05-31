@@ -14,11 +14,18 @@
 
     /* 폰트크기 */
     --font_12: 12px;
+    --font_13: 13px;
     --font_14: 14px;
+    --font_15: 15px;
     --font_16: 16px;
+    --font_17: 17px;
     --font_18: 18px;
+    --font_19: 19px;
     --font_20: 20px;
+    --font_21: 21px;
     --font_22: 22px;
+    --font_23: 23px;
+    --font_24: 24px;
     --font_25: 25px;
 
     /* 글자 굵기 */
@@ -83,7 +90,7 @@
 
 body {
     font-family: "Noto Sans KR", sans-serif;
-    font-weight: 500;
+    font-weight: var(--font_w500);
     font-size: var(--font_14)
 }
 
@@ -190,7 +197,7 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_18);
     color: var(--color_black3);
     background: #f9f9f9;
@@ -198,15 +205,17 @@ body {
     box-sizing: border-box;
     border: solid 1px #e1e1e1;
     position: relative;
-    transition: 0.1s ease-in-out;
+    /* transition: 0.1s ease-in-out; */
     align-items: center;
     justify-content: flex-start;
 }
 
 [class^="tap_box"] [class^="taps"] li a:hover,
 [class^="tap_box"] [class^="taps"] li.active a {
-    border: solid 1px var(--color_green2);
-    font-weight: var(--font_w900);
+    border-color: var(--color_green2);
+    border-width: 1px;
+    outline: 1px solid var(--color_green2);
+    font-weight: var(--font_w500);
     color: var(--color_green2);
     z-index: 2;
 }
@@ -225,17 +234,12 @@ body {
 [class^="tap_box"] [class^="taps"].type2 li a {
     display: block;
     background: var(--color_white);
-    border: 1px solid #e1e1e1;
     box-sizing: border-box;
     position: relative;
 }
 
 [class^="tap_box"] [class^="taps"].type2 li a:hover,
 [class^="tap_box"] [class^="taps"].type2 li.active a {
-    font-weight: var(--font_w900);
-    border-color: var(--color_green2);
-    color: var(--color_green2);
-    z-index: 1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
 }
 
@@ -250,13 +254,13 @@ body {
     padding: 10px 20px;
     border: dashed 1px #e1e1e1;
     font-size: var(--font_14);
-    font-weight: var(--font_w500);
+    font-weight: var(--font_w400);
     text-align: center;
 }
 
 [class^="tap_box"] ul[class^="taps"].type3 li a:hover,
 [class^="tap_box"] ul[class^="taps"].type3 li.active a {
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     color: #225d6b;
     border: solid 1px #225d6b;
     background: #f5fafa;
@@ -265,7 +269,7 @@ body {
 
 /* 블릿 */
 h4[class^="htag_title"] {
-    font-weight: var(--font_w900);
+    font-weight: var(--font_w500);
     font-size: var(--font_25);
     color:var(--color_black);
 }
@@ -276,7 +280,7 @@ h4[class^="htag_title"] span {
 
 h5[class^="htag_title"],
 h6[class^="htag_title"] {
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_20);
     color: var(--color_green2);
     padding: 0 0 0 25px;
@@ -306,7 +310,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="cnt_list"] li {
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_16);
     color: var(--color_black2);
     box-sizing: border-box;
@@ -367,7 +371,7 @@ h6[class^="htag_title"]:before {
 [class^="cnt_list"].number_type li::before {
     width: 15px;
     height: 15px;
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_12);
     color: var(--color_white);
     text-align: center;
@@ -396,53 +400,53 @@ h6[class^="htag_title"]:before {
     table-layout: fixed;
     clear: both;
     color: var(--color_black3);
-    background: #fff;
+    background: var(--color_white);
     border-top: 2px solid #225d6b;
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
 }
 
-[class^="table_box"] table.type01 thead th {
+[class^="table_box"] table thead th {
     background: #f5fafa;
     color:var(--color_black);
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     text-align: center;
     letter-spacing: -0.03em;
-    padding: 10px;
-    font-size: 1em;
+    padding: 15px;
+    font-size: var(--font_16);
     border-right: 1px solid #dcdcdc;
     border-bottom: 1px solid #839da3;
-    font-weight: 500;
+    font-weight: var(--font_w500);
     box-sizing: border-box;
 }
 
-[class^="table_box"] table.type01 thead th:last-child {
+[class^="table_box"] table thead th:last-child {
     border-right: none;
 }
 
-[class^="table_box"] table.type01 tbody th {
+[class^="table_box"] table tbody th {
     letter-spacing: -0.02em;
-    padding: 10px;
+    padding: 15px;
     color:var(--color_black);
     border-bottom: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
     background: #f5fafa;
-    font-weight: 500;
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     box-sizing: border-box;
 }
 
-[class^="table_box"] table.type01 tbody td {
+[class^="table_box"] table tbody td {
     letter-spacing: -0.02em;
-    padding: 10px;
-    color: #555555;
+    padding: 12px;
+    color: var(--color_black3);
     border-bottom: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
     text-align: center;
+    font-size: var(--font_16);
     font-weight: var(--font_w400);
     box-sizing: border-box;
 }
 
-[class^="table_box"] table.type01 tbody td:last-child {
+[class^="table_box"] table tbody td:last-child {
     border-right: none;
 }
 
@@ -451,11 +455,11 @@ h6[class^="htag_title"]:before {
 /* 버튼 */
 [class^="btn_wrap"] a {
     display: inline-block;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     border-radius: 30px;
     padding: 8px 15px;
     box-sizing: border-box;
-    background: #fff;
+    background: var(--color_white);
     transition: all .3s ease-in-out;
 }
 
@@ -464,7 +468,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="btn_wrap"] a span {
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_14);
     color: var(--color_black);
     display: inline-block;
@@ -607,7 +611,7 @@ h6[class^="htag_title"]:before {
 
 [class^="btn_wrap"].type02 a {
     display: inline-block;
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_14);
     color: var(--color_white);
     background: linear-gradient(90deg, rgba(81, 117, 193, 1) 30%, rgba(0, 144, 141, 1) 75%);
@@ -634,7 +638,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="btn_wrap"].type02 .link_type1 {
-    background: #fff;
+    background: var(--color_white);
     border: solid 2px #5644a1;
     color: #5644a1;
     position: relative;
@@ -661,7 +665,7 @@ h6[class^="htag_title"]:before {
 
 
 [class^="text_box"] {
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     font-size: var(--font_14);
     color: var(--color_black3);
     width: 100%;
@@ -685,14 +689,14 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="text_box"].btn_type h5.tit {
-    font-weight: var(--font_w900);
+    font-weight: var(--font_w500);
     font-size: var(--font_25);
     color: #000000;
     padding-bottom: 15px;
 }
 
 [class^="text_box"].btn_type .txt {
-    font-weight: var(--font_w500);
+    font-weight: var(--font_w400);
     font-size: var(--font_14);
     color: var(--color_black3);
     display: block;
@@ -704,7 +708,7 @@ h6[class^="htag_title"]:before {
 input[type="text"],
 input[type="number"] {
     font-weight: var(--font_w400);
-    width: 300px;
+    width:100%;
     color: var(--color_black3);
     height: 38px;
     border: 1px solid #d6d6d6;
@@ -712,6 +716,7 @@ input[type="number"] {
     padding: 0px 10px;
     display: inline-block;
     vertical-align: middle;
+    border-radius: 5px;
 }
 
 input[type="text"]::placeholder,
@@ -759,10 +764,11 @@ input[type="password"]::placeholder {
 .chk-select select {
     font-weight: var(--font_w400);
     color: var(--color_black3);
-    font-size: var(--font_18);
+    font-size: var(--font_16);
     width: 100%;
     height: 38px;
     padding: 5px 50px 5px 15px;
+    border-radius: 5px;
     border: 1px solid #d6d6d6;
     text-align: left;
     text-align-last: left;
@@ -809,7 +815,7 @@ textarea {
     display: inline-block;
     position: relative;
     padding-left: 20px;
-    font-size: var(--font_18);
+    font-size: var(--font_16);
     color: #4d4d4d;
     line-height: 120%;
     cursor: pointer;
@@ -823,7 +829,7 @@ textarea {
     width: 14px;
     height: 14px;
     text-align: center;
-    background: #fff;
+    background: var(--color_white);
     border: 1px solid #a3a3a3;
     border-radius: 50%;
 }
@@ -875,7 +881,7 @@ textarea {
     font-size: var(--font_18);
     line-height: 120%;
     color: #47495a;
-    font-weight: 500;
+    font-weight: var(--font_w500);
     letter-spacing: -0.03em;
     cursor: pointer;
 }
@@ -888,7 +894,7 @@ textarea {
     width: 16px;
     height: 16px;
     text-align: center;
-    background: #fff;
+    background: var(--color_white);
     border: 1px solid #cecece;
     border-radius: 4px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
@@ -904,7 +910,7 @@ textarea {
 }
 
 .checks input[type="checkbox"]:checked+label:before {
-    background: #fff;
+    background: var(--color_white);
     border-color: #0942a1;
 }
 
@@ -949,7 +955,7 @@ textarea {
     box-sizing: border-box;
     color: #111;
     text-align: left;
-    font-weight:var(--font_w900);
+    font-weight: var(--font_w500);
     color:var(--color_black);
     display: flex;
     align-items: center;
@@ -965,8 +971,10 @@ textarea {
 }
 
 .txtBoxWrap .tbwList dd p {
-    font-weight: var(--font_w300);
-    color: #666;
+    font-weight: var(--font_w400);
+    color: var(--color_black3);
+    font-size:var(--font_16);
+    line-height: 190%;
     letter-spacing: -1px;
 }
 
@@ -1013,19 +1021,19 @@ textarea {
     width: 100%;
     border-collapse: collapse;
     clear: both;
-    background: #fff;
+    background: var(--color_white);
     border-top: 2px solid #333353;
 }
 
 [class^="board_list"] table thead th {
-    background: #fff;
+    background: var(--color_white);
     color: #111;
     text-align: center;
     letter-spacing: -0.03em;
-    padding: 12px 0;
-    font-size: var(--font_16);
+    padding: 15px 0;
+    font-size: var(--font_18);
     border-bottom: 1px solid #999;
-    font-weight: 500;
+    font-weight: var(--font_w500);
 }
 
 [class^="board_list"] table thead th span {
@@ -1070,7 +1078,7 @@ textarea {
     border-bottom: 1px solid #e7e7e7;
     font-size: 16px;
     background: #fbfbfb;
-    font-weight: 500;
+    font-weight: var(--font_w500);
     text-align: center;
 }
 
@@ -1079,7 +1087,7 @@ textarea {
     letter-spacing: -0.02em;
     padding: 12px 10px;
     border-bottom: 1px solid #dcdcdc;
-    font-size: var(--font_18);
+    font-size: var(--font_17);
     text-align: center;
     word-break: break-all;
 }
@@ -1089,6 +1097,9 @@ textarea {
 }
 
 
+[class^="board_list"] table tbody tr.notice_line {
+    background-color: #f7f7f7;
+}
 [class^="board_list"] table tbody td.notice span {
     font-size: 0;
     display: inline-block;
@@ -1168,7 +1179,7 @@ textarea {
 [class^="board_selecter"] .totalTxt {
     font-size: var(--font_16);
     color: var(--color_black3);
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     padding-left: 25px;
     background: url('./images/board/listTotal.png') left center no-repeat;
 }
@@ -1196,7 +1207,7 @@ textarea {
     background-position: right 10px center;
     background-repeat: no-repeat;
     font-size: var(--font_16);
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     color: var(--color_black3);
     margin-right: 15px;
 }
@@ -1224,8 +1235,8 @@ textarea {
     font-size: 0;
     border: none;
     background: url('./images/board/searchIcon.png') center no-repeat;
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     cursor: pointer;
     margin-left: 10px;
     vertical-align: top;
@@ -1256,7 +1267,7 @@ textarea {
     background-color: #f8f8f8;
     ;
     color: var(--color_black3);
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
 }
 
 [class^="board_list_btn"] .bdNumWrap .bdNum.numOn {
@@ -1289,107 +1300,38 @@ textarea {
     font-weight: var(--font_w400);
     border: 1px solid #d1d1d1;
     color: var(--color_black3);
-    background: #fff;
+    background: var(--color_white);
     border-radius: 50px;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.11);
 }
 
 
 
-[class^="board_viewer"] {
+[class^="board_table"] {
     width: 100%;
     border-top: 2px solid #000;
     border-bottom: 1px solid #9d9d9d;
 }
 
-[class^="board_viewer"] [class^="viewer_title"] {
-    width: 100%;
-    background: #f8f8f8;
-    padding: 40px 10px;
-    text-align: center;
-    border-bottom: 1px solid #dcdcdc;
-    box-sizing: border-box;
-}
-
-[class^="board_viewer"] [class^="viewer_title"] p {
-    font-weight:var(--font_w700);
-    color: #111;
-    font-size: 22px;
-    line-height: 120%;
-    word-break: keep-all;
-}
-
-[class^="board_viewer"] [class^="viewer_list"] {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-}
-
-[class^="board_viewer"] [class^="viewer_list"] dl {
-    width: 50%;
-    border-bottom: 1px solid #dcdcdc;
-    box-sizing: border-box;
-    display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-}
-
-[class^="board_viewer"] [class^="viewer_list"] dl.full {
-    width: 100%;
-}
-
-[class^="board_viewer"] [class^="viewer_list"] dl dt {
-    flex-shrink: 0;
-    width: 180px;
-    padding: 15px 30px;
-    box-sizing: border-box;
-    border-right: 1px solid #dcdcdc;
-    background-color: #f8f8f8;
-    font-size: var(--font_16);
-    font-weight:var(--font_w700);
-    color:var(--color_black);
-    word-break: keep-all;
-}
-
-[class^="board_viewer"] [class^="viewer_list"] dl dd {
-    background-color: var(--color_white);
-    width: 100%;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    font-size: var(--font_16);
-    font-weight: var(--font_w700);
-    color: var(--color_black3);
-}
-
-[class^="board_viewer"] [class^="viewer_list"] dl dd .fileBoxs li:not(:last-child) {
-    margin-bottom: 15px;
-}
-
-[class^="board_viewer"] [class^="viewer_list"] dl dd .fileBoxs li .fileDown {
-    padding-left: 25px;
-    background: url('./images/board/fileIcon.png') left center no-repeat;
-    font-size: var(--font_16);
-    color: var(--color_black3);
-}
-
-[class^="board_viewer"] .bdvCntWrap {
+[class^="board_table"] .bdvCntWrap {
     padding: 50px;
     box-sizing: border-box;
 }
 
-[class^="board_viewer"] .bdvCntWrap img {
+[class^="board_table"] .bdvCntWrap img {
     max-width: 100%;
 }
 
 [class^="write_address"] [class^="file_wrap"].address {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    gap: 10px;
+    margin-bottom:15px;
 }
 
 [class^="write_address"] [class^="file_wrap"].address input {
-    margin-right: 10px;
+    max-width:300px;
 }
 
 [class^="write_address"] .addressMore {
@@ -1434,7 +1376,7 @@ textarea {
 [class^="board_pagebtn"] dt span {
     display: inline-block;
     font-size: var(--font_16);
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     color:var(--color_black);
     padding-right: 20px;
     background-position: right center;
@@ -1457,7 +1399,7 @@ textarea {
 [class^="board_pagebtn"] dd a {
     font-size: 16px;
     color: var(--color_black3);
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1466,30 +1408,7 @@ textarea {
     ;
 }
 
-
-
-
-[class^="board_write"] {
-    position: relative;
-    font-weight: var(--font_w700);
-}
-
-[class^="board_write"]:after {
-    clear: both;
-    content: "";
-    display: block;
-}
-
-[class^="board_write"] table {
-    position: relative;
-    width: 100%;
-    border-collapse: collapse;
-    clear: both;
-    background: #fff;
-    border-top: 2px solid #333353;
-}
-
-[class^="board_write"] table thead th {
+[class^="board_table"] table thead th {
     background: #f7f7f7;
     color:var(--color_black);
     text-align: left;
@@ -1497,38 +1416,41 @@ textarea {
     padding: 12px;
     font-size: 16px;
     border-bottom: 1px solid #999;
-    font-weight: 500;
+    font-weight: var(--font_w500);
 }
 
-[class^="board_write"] table tbody th,
-[class^="board_write"] table tbody td {
-    letter-spacing: -0.02em;
-    padding: 20px;
-    border-bottom: 1px solid #e7e7e7;
-    text-align: left;
+[class^="board_table"] table tbody th,
+[class^="board_table"] table tbody td{
+    padding: 10px 20px;
     box-sizing: border-box;
+    border-bottom: 1px solid #e7e7e7;
+    height: 60px;
 }
 
-[class^="board_write"] table tbody th {
+[class^="board_table"] table tbody th {
     color:var(--color_black);
     background: #f7f7f7;
     font-size:var(--font_18);
     font-weight:var(--font_w500);
+    text-align: center;
 }
 
-[class^="board_write"] table tbody td {
+[class^="board_table"] table tbody td {
     color:var(--color_black3);
-    font-size: var(--font_18);
-    font-weight: var(--font_w500);
+    font-size: var(--font_16);
+    font-weight: var(--font_w400);
+    text-align: left;
+    letter-spacing: -0.02em;
+    
 }
 
-[class^="board_write"] table tbody th .impor_txt {
+[class^="board_table"] table tbody th .impor_txt {
     position: relative;
     display: inline-block;
     padding-right: 15px;
 }
 
-[class^="board_write"] table tbody th .impor_txt:before {
+[class^="board_table"] table tbody th .impor_txt:before {
     position: absolute;
     top: -1px;
     right: 0px;
@@ -1538,36 +1460,39 @@ textarea {
     content: "＊";
 }
 
-[class^="board_write"] table tbody td .tel_input {
+[class^="board_table"] table tbody td .tel_input {
     font-size: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-[class^="board_write"] table tbody td .tel_input .chk-select {
+[class^="board_table"] table tbody td .tel_input .chk-select {
     width: 30%;
 }
 
-[class^="board_write"] table tbody td .tel_input input[type="text"] {
+[class^="board_table"] table tbody td .tel_input input[type="text"] {
     width: 30%;
 }
 
-[class^="board_write"] table tbody td .tel_input .line {
-    width: 5%;
+[class^="board_table"] table tbody td .tel_input .line {
     line-height: 38px;
     vertical-align: middle;
-    font-size: 16px;
+    font-size: var(--font_18);
+    font-weight: var(--font_w700);
     display: inline-block;
     text-align: center;
 }
 
-[class^="board_write"] table tbody td .email_input {
+[class^="board_table"] table tbody td .email_input {
     font-size: 0px;
 }
 
-[class^="board_write"] table tbody td .email_input .id {
+[class^="board_table"] table tbody td .email_input .id {
     width: 30%;
 }
 
-[class^="board_write"] table tbody td .email_input .at {
+[class^="board_table"] table tbody td .email_input .at {
     width: 5%;
     display: inline-block;
     line-height: 38px;
@@ -1577,70 +1502,70 @@ textarea {
     vertical-align: middle;
 }
 
-[class^="board_write"] table tbody td .email_input .email {
+[class^="board_table"] table tbody td .email_input .email {
     width: 35%;
     margin-right: 1%;
 }
 
-[class^="board_write"] table tbody td .email_input .chk-select {
+[class^="board_table"] table tbody td .email_input .chk-select {
     width: 28%;
 }
 
-[class^="board_write"] table tbody td .radio_group .radios {
+[class^="board_table"] table tbody td .radio_group .radios {
     margin-right: 30px;
 }
 
-[class^="board_write"] table tbody td .radio_group .radios:last-child {
+[class^="board_table"] table tbody td .radio_group .radios:last-child {
     margin-right: 0px;
 }
 
-[class^="board_write"] table tbody td textarea {
+[class^="board_table"] table tbody td textarea {
     width: 100%;
     height: 220px;
 }
 
-[class^="board_write"] .scBtn .scbBtn {
+[class^="board_table"] .scBtn .scbBtn {
     color: var(--color_white);
     border: none;
-    font-weight: var(--font_w700);
+    font-weight: var(--font_w500);
     padding: 7px 40px;
     box-sizing: border-box;
     border-radius: 50px;
 }
 
-[class^="board_write"] .scBtn .searchData {
+[class^="board_table"] .scBtn .searchData {
     background-color: #1659c7;
 }
 
-[class^="board_write"] .scBtn .resetData {
+[class^="board_table"] .scBtn .resetData {
     color: var(--color_white);
     background-color:var(--color_black);
 }
 
-[class^="board_write"] .daySpan {
+[class^="board_table"] .daySpan {
     display: inline-block;
     width: 7.5%;
     text-align: center;
 }
 
+
+
 [class^="file_wrap"] {
     display: flex;
-    align-items: center;
-}
-
-[class^="file_wrap"]:not(:last-child) {
-    margin-bottom: 10px
+    align-items: flex-start;
+    flex-direction: column;
+    gap:15px;
 }
 
 [class^="file_wrap"] .btn_file {
     display: block;
     font-size:var(--font_14);
-    line-height: 32px;
+    line-height: 36px;
     border: 1px solid #b5b5b5;
     box-sizing: border-box;
     background: #e0e0e0;
     color:var(--color_black);
-    font-weight: var(--font_w500);
+    font-weight: var(--font_w400);
     width: 100px;
     text-align: center;
     cursor: pointer;
@@ -1660,6 +1585,24 @@ textarea {
 
 [class^="file_wrap"].active .btn_file {
     background: #0942a1;
+}
+
+
+[class^="board_table"] [class^="viewer_type"] [class^="viewr_title"] th{
+    padding:30px 20px;
+}
+
+[class^="board_table"] [class^="viewer_type"] [class^="file_wrap"] {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+[class^="board_table"] [class^="viewer_type"] [class^="file_wrap"] li a {
+    padding-left: 25px;
+    background: url('./images/board/fileIcon.png') left center no-repeat;
+    font-size: var(--font_16);
+    color: var(--color_black3);
 }
 
 
@@ -1705,7 +1648,7 @@ textarea {
 
 [class^="photo_list"] .photoListUl .htoListCnt .photoInfoBox .photoTitle {
     font-size: var(--font_18);
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1722,7 +1665,7 @@ textarea {
 
 [class^="photo_list"] .photoListUl .htoListCnt .photoInfoBox .phptoInfo p {
     font-size: var(--font_16);
-    font-weight:var(--font_w700);
+    font-weight: var(--font_w500);
     color: var(--color_black3);
     padding-left: 22px;
     box-sizing: border-box;
@@ -1750,5 +1693,5 @@ textarea {
 
 [class^="photo_list"] .photoListUl .htoListCnt>a:hover .photoTitle {
     color: var(--color_green2);
-    font-weight:var(--font_w900);
+    font-weight: var(--font_w500);
 }
