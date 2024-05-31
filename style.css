@@ -71,16 +71,18 @@
 
     /* 제목 태그 외 폰트 색상 지정  */
     /* 글자 색상 */
-    --color_black: #000;
-    --color_black2: #333;
-    --color_black3: #555;
+    --color_0: #000;
+    --color_3: #333;
+    --color_5: #555;
+    --color_9: #999;
     --color_white: #fff;
+    --color_f9: #f9f9f9;
     --color_red: #C20606;
     --color_blue: #0651C2;
     --color_green: #038A19;
     --color_green2: #00908d;
     --color_braun: #C66409;
-    --color_gray: #999;
+    --color_purple: #5644a1;
 
 
 
@@ -89,6 +91,7 @@
 /* 색상변수.E */
 
 body {
+    width:1920px; /* 임시 강제 크기 */
     font-family: "Noto Sans KR", sans-serif;
     font-weight: var(--font_w500);
     font-size: var(--font_14)
@@ -199,8 +202,8 @@ body {
     width: 100%;
     font-weight: var(--font_w500);
     font-size: var(--font_18);
-    color: var(--color_black3);
-    background: #f9f9f9;
+    color: var(--color_5);
+    background: var(--color_f9);
     padding: 20px;
     box-sizing: border-box;
     border: solid 1px #e1e1e1;
@@ -250,7 +253,7 @@ body {
 
 [class^="tap_box"] [class^="taps"].type3 li a {
     display: block;
-    color: #666666;
+    color: var(--color_5);
     padding: 10px 20px;
     border: dashed 1px #e1e1e1;
     font-size: var(--font_14);
@@ -271,11 +274,11 @@ body {
 h4[class^="htag_title"] {
     font-weight: var(--font_w500);
     font-size: var(--font_25);
-    color:var(--color_black);
+    color:var(--color_0);
 }
 
 h4[class^="htag_title"] span {
-    color: var(--color_black3);
+    color: var(--color_5);
 }
 
 h5[class^="htag_title"],
@@ -312,7 +315,7 @@ h6[class^="htag_title"]:before {
 [class^="cnt_list"] li {
     font-weight: var(--font_w500);
     font-size: var(--font_16);
-    color: var(--color_black2);
+    color: var(--color_3);
     box-sizing: border-box;
     position: relative;
 }
@@ -341,7 +344,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="cnt_list"].step02 li {
-    color: #666666;
+    color: var(--color_5);
     padding: 0 0 5px 12px;
 }
 
@@ -359,7 +362,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="cnt_list"].number_type li {
-    color: var(--color_black2);
+    color: var(--color_3);
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -377,7 +380,7 @@ h6[class^="htag_title"]:before {
     text-align: center;
     padding-top: 2px;
     position: static;
-    background: #10873F;
+    background: var(--color_green);
     box-sizing: border-box;
     border-radius: 2px;
     line-height: 12px;
@@ -399,7 +402,7 @@ h6[class^="htag_title"]:before {
     border-collapse: collapse;
     table-layout: fixed;
     clear: both;
-    color: var(--color_black3);
+    color: var(--color_5);
     background: var(--color_white);
     border-top: 2px solid #225d6b;
     font-weight: var(--font_w500);
@@ -407,7 +410,7 @@ h6[class^="htag_title"]:before {
 
 [class^="table_box"] table thead th {
     background: #f5fafa;
-    color:var(--color_black);
+    color:var(--color_0);
     font-weight: var(--font_w500);
     text-align: center;
     letter-spacing: -0.03em;
@@ -426,7 +429,7 @@ h6[class^="htag_title"]:before {
 [class^="table_box"] table tbody th {
     letter-spacing: -0.02em;
     padding: 15px;
-    color:var(--color_black);
+    color:var(--color_0);
     border-bottom: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
     background: #f5fafa;
@@ -437,7 +440,7 @@ h6[class^="htag_title"]:before {
 [class^="table_box"] table tbody td {
     letter-spacing: -0.02em;
     padding: 12px;
-    color: var(--color_black3);
+    color: var(--color_5);
     border-bottom: 1px solid #dcdcdc;
     border-right: 1px solid #dcdcdc;
     text-align: center;
@@ -470,7 +473,7 @@ h6[class^="htag_title"]:before {
 [class^="btn_wrap"] a span {
     font-weight: var(--font_w500);
     font-size: var(--font_14);
-    color: var(--color_black);
+    color: var(--color_0);
     display: inline-block;
     position: relative;
     padding-right: 25px;
@@ -508,7 +511,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="btn_wrap"].bg_type1 a {
-    background-color: var(--color_black3);
+    background-color: var(--color_5);
 }
 
 [class^="btn_wrap"].bg_type2 a {
@@ -639,13 +642,13 @@ h6[class^="htag_title"]:before {
 
 [class^="btn_wrap"].type02 .link_type1 {
     background: var(--color_white);
-    border: solid 2px #5644a1;
-    color: #5644a1;
+    border: solid 2px var(--color_purple);
+    color: var(--color_purple);
     position: relative;
 }
 
 [class^="btn_wrap"].type02 .link_type1 span {
-    color: #5644a1;
+    color: var(--color_purple);
 }
 
 [class^="btn_wrap"].type02 .link_type1 span:after {
@@ -656,7 +659,7 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="btn_wrap"].type02 .link_type2 {
-    background: #5644a1;
+    background: var(--color_purple);
 }
 
 
@@ -667,7 +670,7 @@ h6[class^="htag_title"]:before {
 [class^="text_box"] {
     font-weight: var(--font_w500);
     font-size: var(--font_14);
-    color: var(--color_black3);
+    color: var(--color_5);
     width: 100%;
     padding: 20px 20px;
     box-sizing: border-box;
@@ -676,8 +679,8 @@ h6[class^="htag_title"]:before {
 }
 
 [class^="text_box"].bg-g {
-    background-color: #f9f9f9;
-    color: var(--color_black2);
+    background-color: var(--color_f9);;
+    color: var(--color_3);
 }
 
 [class^="text_box"].btn_type {
@@ -691,14 +694,14 @@ h6[class^="htag_title"]:before {
 [class^="text_box"].btn_type h5.tit {
     font-weight: var(--font_w500);
     font-size: var(--font_25);
-    color: #000000;
+    color: var(--color_0);
     padding-bottom: 15px;
 }
 
 [class^="text_box"].btn_type .txt {
     font-weight: var(--font_w400);
     font-size: var(--font_14);
-    color: var(--color_black3);
+    color: var(--color_5);
     display: block;
     padding-bottom: 15px;
 }
@@ -709,7 +712,7 @@ input[type="text"],
 input[type="number"] {
     font-weight: var(--font_w400);
     width:100%;
-    color: var(--color_black3);
+    color: var(--color_5);
     height: 38px;
     border: 1px solid #d6d6d6;
     box-sizing: border-box;
@@ -763,7 +766,7 @@ input[type="password"]::placeholder {
 
 .chk-select select {
     font-weight: var(--font_w400);
-    color: var(--color_black3);
+    color: var(--color_5);
     font-size: var(--font_16);
     width: 100%;
     height: 38px;
@@ -797,7 +800,7 @@ textarea {
     font-size: 0px;
     vertical-align: middle;
     line-height: 120%;
-    color:var(--color_black);
+    color:var(--color_0);
 }
 
 .radios input[type="radio"] {
@@ -860,7 +863,7 @@ textarea {
     font-size: 0px;
     vertical-align: middle;
     line-height: 100%;
-    color:var(--color_black);
+    color:var(--color_0);
 }
 
 .checks input[type="checkbox"] {
@@ -927,7 +930,7 @@ textarea {
     width: 32%;
     text-align: center;
     box-sizing: border-box;
-    background-color: #f9f9f9;
+    background-color: var(--color_f9);;
     border: 1px dashed #e1e1e1;
 }
 
@@ -949,14 +952,14 @@ textarea {
 
 .txtBoxWrap .tbwList dt {
     width: 100%;
-    color: var(--color_black2);
+    color: var(--color_3);
     font-size: var(--font_18);
     padding: 20px 30px;
     box-sizing: border-box;
     color: #111;
     text-align: left;
     font-weight: var(--font_w500);
-    color:var(--color_black);
+    color:var(--color_0);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -972,7 +975,7 @@ textarea {
 
 .txtBoxWrap .tbwList dd p {
     font-weight: var(--font_w400);
-    color: var(--color_black3);
+    color: var(--color_5);
     font-size:var(--font_16);
     line-height: 190%;
     letter-spacing: -1px;
@@ -981,13 +984,13 @@ textarea {
 .txtBoxWrap .tbwList .tel {
     padding-left: 24px;
     background: url('./images/common/telIcon.png') left center no-repeat;
-    color: #666;
+    color: var(--color_5);
 }
 
 .txtBoxWrap .tbwList .fax {
     padding-left: 24px;
     background: url('./images/common/faxIcon.png') left center no-repeat;
-    color: #666;
+    color: var(--color_5);
     margin-left: 25px;
     position: relative;
     display: inline-block;
@@ -1076,14 +1079,14 @@ textarea {
     padding: 12px 10px;
     color: #111;
     border-bottom: 1px solid #e7e7e7;
-    font-size: 16px;
+    font-size: var(--font_16);
     background: #fbfbfb;
     font-weight: var(--font_w500);
     text-align: center;
 }
 
 [class^="board_list"] table tbody td {
-    color: var(--color_black3);
+    color: var(--color_5);
     letter-spacing: -0.02em;
     padding: 12px 10px;
     border-bottom: 1px solid #dcdcdc;
@@ -1148,7 +1151,7 @@ textarea {
     padding: 10px 15px;
     background: #61564b;
     color: var(--color_white);
-    font-size: 14px;
+    font-size: var(--font_14);
 }
 
 [class^="board_list"] table tbody td .btns span {
@@ -1178,7 +1181,7 @@ textarea {
 
 [class^="board_selecter"] .totalTxt {
     font-size: var(--font_16);
-    color: var(--color_black3);
+    color: var(--color_5);
     font-weight: var(--font_w500);
     padding-left: 25px;
     background: url('./images/board/listTotal.png') left center no-repeat;
@@ -1208,7 +1211,7 @@ textarea {
     background-repeat: no-repeat;
     font-size: var(--font_16);
     font-weight: var(--font_w500);
-    color: var(--color_black3);
+    color: var(--color_5);
     margin-right: 15px;
 }
 
@@ -1217,18 +1220,23 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 15px;
+    padding-right:15px;
+    overflow: hidden;
 }
 
 [class^="board_selecter"] .boardSearch-input input[type='text'],
 [class^="board_selecter"] .boardSearch-input input[type='number'] {
     border: none;
-    background: none;
     font-size: var(--font_16);
     font-weight:var(--font_w500);
-    color: var(--color_black3);
+    color: var(--color_5);
     line-height: 25px;
-    width: 200px;
+    width: 220px;
+    background-color: var(--color_white);
+    padding-left: 15px;
+    border-right:1px solid #e0e0e0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 [class^="board_selecter"] .boardSearch-input input[type='submit'] {
@@ -1266,12 +1274,12 @@ textarea {
     box-sizing: border-box;
     background-color: #f8f8f8;
     ;
-    color: var(--color_black3);
+    color: var(--color_5);
     font-weight: var(--font_w500);
 }
 
 [class^="board_list_btn"] .bdNumWrap .bdNum.numOn {
-    background: #555555;
+    background:var(--color_5);
     color: var(--color_white);
 }
 
@@ -1296,10 +1304,10 @@ textarea {
     width: 87px;
     height: 40px;
     line-height: 38px;
-    font-size: 16px;
+    font-size: var(--font_16);
     font-weight: var(--font_w400);
     border: 1px solid #d1d1d1;
-    color: var(--color_black3);
+    color: var(--color_5);
     background: var(--color_white);
     border-radius: 50px;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.11);
@@ -1309,7 +1317,7 @@ textarea {
 
 [class^="board_table"] {
     width: 100%;
-    border-top: 2px solid #000;
+    border-top: 2px solid var(--color_0);
     border-bottom: 1px solid #9d9d9d;
 }
 
@@ -1377,7 +1385,7 @@ textarea {
     display: inline-block;
     font-size: var(--font_16);
     font-weight: var(--font_w500);
-    color:var(--color_black);
+    color:var(--color_0);
     padding-right: 20px;
     background-position: right center;
     background-repeat: no-repeat;
@@ -1397,8 +1405,8 @@ textarea {
 }
 
 [class^="board_pagebtn"] dd a {
-    font-size: 16px;
-    color: var(--color_black3);
+    font-size: var(--font_16);
+    color: var(--color_5);
     font-weight: var(--font_w500);
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1410,11 +1418,11 @@ textarea {
 
 [class^="board_table"] table thead th {
     background: #f7f7f7;
-    color:var(--color_black);
+    color:var(--color_0);
     text-align: left;
     letter-spacing: -0.03em;
     padding: 12px;
-    font-size: 16px;
+    font-size: var(--font_16);
     border-bottom: 1px solid #999;
     font-weight: var(--font_w500);
 }
@@ -1428,7 +1436,7 @@ textarea {
 }
 
 [class^="board_table"] table tbody th {
-    color:var(--color_black);
+    color:var(--color_0);
     background: #f7f7f7;
     font-size:var(--font_18);
     font-weight:var(--font_w500);
@@ -1436,7 +1444,7 @@ textarea {
 }
 
 [class^="board_table"] table tbody td {
-    color:var(--color_black3);
+    color:var(--color_5);
     font-size: var(--font_16);
     font-weight: var(--font_w400);
     text-align: left;
@@ -1455,8 +1463,8 @@ textarea {
     top: -1px;
     right: 0px;
     color: #e55757;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: var(--font_13);
+    font-weight: var(--font_w600);
     content: "＊";
 }
 
@@ -1496,7 +1504,7 @@ textarea {
     width: 5%;
     display: inline-block;
     line-height: 38px;
-    font-size: 16px;
+    font-size: var(--font_16);
     color: #555454;
     text-align: center;
     vertical-align: middle;
@@ -1539,7 +1547,7 @@ textarea {
 
 [class^="board_table"] .scBtn .resetData {
     color: var(--color_white);
-    background-color:var(--color_black);
+    background-color:var(--color_0);
 }
 
 [class^="board_table"] .daySpan {
@@ -1564,7 +1572,7 @@ textarea {
     border: 1px solid #b5b5b5;
     box-sizing: border-box;
     background: #e0e0e0;
-    color:var(--color_black);
+    color:var(--color_0);
     font-weight: var(--font_w400);
     width: 100px;
     text-align: center;
@@ -1602,7 +1610,7 @@ textarea {
     padding-left: 25px;
     background: url('./images/board/fileIcon.png') left center no-repeat;
     font-size: var(--font_16);
-    color: var(--color_black3);
+    color: var(--color_5);
 }
 
 
@@ -1666,7 +1674,7 @@ textarea {
 [class^="photo_list"] .photoListUl .htoListCnt .photoInfoBox .phptoInfo p {
     font-size: var(--font_16);
     font-weight: var(--font_w500);
-    color: var(--color_black3);
+    color: var(--color_5);
     padding-left: 22px;
     box-sizing: border-box;
     background-position: left center;
